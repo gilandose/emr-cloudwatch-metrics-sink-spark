@@ -63,6 +63,28 @@
         </repository>
       </repositories>
     </profile>
+    <profile>
+      <id>emr-7.x.x</id>
+      <properties>
+        <scala.version>2.12.17</scala.version>
+        <scala.compat.version>2.12</scala.compat.version>
+        <spark.version>3.5.0</spark.version>
+        <scalatest.version>3.2.15</scalatest.version>
+      </properties>
+      <repositories>
+        <repository>
+          <id>emr-7.0.0-artifacts</id>
+          <name>EMR 7.0.0 Releases Repository</name>
+          <releases>
+            <enabled>true</enabled>
+          </releases>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <url>https://s3.us-west-1.amazonaws.com/us-west-1-emr-artifacts/emr-7.0.0/repos/maven/</url>
+        </repository>
+      </repositories>
+    </profile>
   </profiles>
 
   <properties>
